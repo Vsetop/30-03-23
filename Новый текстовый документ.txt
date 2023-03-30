@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Product{
+            constructor(id_product,title_product,id_category,id_seller,id_brand){
+            this.id_product=id_product
+            this.title_product=title_product
+            this.id_category=id_category
+            this.id_brand=id_brand
+            this.id_seller=id_seller
+            }
+        }
+        class Category{
+            constructor(id_category,category_product){
+            this.id_category=id_category
+            this.category_product=category_product
+            }
+        }
+        class Seller{
+            constructor(id_seller,seller_product){
+            this.id_seller=id_seller
+            this.seller_product=seller_product
+            }
+        }
+        class Brand{
+            constructor(id_brand,brand_product){
+            this.id_brand=id_brand
+            this.brand_product=brand_product
+            }
+        }
+        let categories = []
+        categories.push(new Category(11,"phone"), new Category(12, "crocs")),new Category(13,"fruits"),new Category(14,"parts"),new Category(15,"nothing")
+            let sellers = []
+            sellers.push(new Seller(21,'aleexpress'),new Seller(22,'ozon'),new Seller(23,'dns'),new Seller(24,'mvideo'),new Seller(25,'wildberries'))
+                let brands = []
+                brands.push(new Brand(31,'aple'),new Brand(32,'xaomi'),new Brand(33,'androd'),new Brand(34,'cougar'),new Brand(35,'xseres'))
+                    let products = []
+                    products.push(new Product(1,'aphone x',11,24,31),new Product(2,'DragonFruit',13,21,32),new Product(3,'Nike Are',12,25,35),new Product(4,'Tv',14,22,33),new Product(5,'absolutely Nothing',15,23,34))
+    </script>
+</body>
+</html>
